@@ -4,6 +4,9 @@ import { Typography } from "@mui/material";
 const MUITypograhy = () => {
   return (
     <div>
+      <Typography variant="h1" align="center">
+        MUI Typography
+      </Typography>
       <Typography variant="h1" gutterBottom>
         h1 Heading
       </Typography>
@@ -18,8 +21,10 @@ const MUITypograhy = () => {
       <Typography variant="h6" gutterBottom>
         h6 Heading
       </Typography>
+
       <Typography variant="subtitle1">Sub title 1</Typography>
       <Typography variant="subtitle2">Sub title 2</Typography>
+
       <Typography variant="body1">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
         perspiciatis vero consequuntur ab perferendis consequatur, voluptatem

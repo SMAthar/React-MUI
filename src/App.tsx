@@ -1,15 +1,16 @@
+import { Stack } from "@mui/material";
 import React from "react";
-import MUITypograhy from "./components/MUITypograhy";
-
 import "./App.css";
+
+import MUITypograhy from "./components/MUITypograhy";
 import MUIButtons from "./components/MUIButtons";
 
 const App = () => {
   return (
-    <div className="App">
-      <MUITypograhy />
+    <Stack spacing={5} className="App">
       <MUIButtons />
-    </div>
+      <MUITypograhy />
+    </Stack>
   );
 };
 
