@@ -1,7 +1,12 @@
-import { Stack, Button,IconButton, Typography } from "@mui/material";
+import {
+  Stack,
+  Button,
+  IconButton,
+  Typography,
+  ButtonGroup,
+} from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 import React from "react";
-
 
 const MUIButtons = () => {
   return (
@@ -108,9 +113,56 @@ const MUIButtons = () => {
         </Button>
       </Stack>
       <Stack spacing={2} direction="row">
-        <Button variant="contained" startIcon={<SendIcon/>} disableElevation onClick={()=>alert("Clicked")}>Send</Button>
-        <Button variant="contained" endIcon={<SendIcon/>} disableRipple>Send</Button>
-        <IconButton color="success" size="small"><SendIcon/></IconButton>
+        <Button
+          variant="contained"
+          startIcon={<SendIcon />}
+          disableElevation
+          onClick={() => alert("Clicked")}
+        >
+          Send
+        </Button>
+        <Button variant="contained" endIcon={<SendIcon />} disableRipple>
+          Send
+        </Button>
+        <IconButton color="success" size="small">
+          <SendIcon />
+        </IconButton>
+      </Stack>
+      <Typography variant="h1" align="center">
+        MUI Button Group
+      </Typography>
+      <Stack direction="row">
+        <ButtonGroup variant="contained">
+          <Button>Left</Button>
+          <Button>Center</Button>
+          <Button>Right</Button>
+        </ButtonGroup>
+      </Stack>
+      <Stack direction="row">
+        <ButtonGroup
+          variant="contained"
+          orientation="vertical"
+          size="small"
+          color="info"
+        >
+          <Button onClick={() => alert("Left Clicked")}>Left</Button>
+          <Button>Center</Button>
+          <Button>Right</Button>
+        </ButtonGroup>
+      </Stack>
+      <Stack direction="row">
+        <ButtonGroup variant="outlined">
+          <Button>Left</Button>
+          <Button>Center</Button>
+          <Button>Right</Button>
+        </ButtonGroup>
+      </Stack>
+      <Stack direction="row">
+        <ButtonGroup variant="text">
+          <Button>Left</Button>
+          <Button>Center</Button>
+          <Button>Right</Button>
+        </ButtonGroup>
       </Stack>
     </Stack>
   );
